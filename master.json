@@ -1,0 +1,1036 @@
+{
+  "lobby": [
+    {
+      "key": "regular",
+      "name": "ナワバリ",
+      "value": 1
+    },
+    {
+      "key": "bankara_challenge",
+      "name": "バンカラ（チャレンジ）",
+      "value": 2
+    },
+    {
+      "key": "bankara_open",
+      "name": "バンカラ（オープン）",
+      "value": 3
+    },
+    {
+      "key": "xmatch",
+      "name": "Xマッチ",
+      "value": 4
+    },
+    {
+      "key": "splatfest_challenge",
+      "name": "フェス（チャレンジ）",
+      "value": 5
+    },
+    {
+      "key": "splatfest_open",
+      "name": "フェス（オープン）",
+      "value": 6
+    },
+    {
+      "key": "event",
+      "name": "イベント",
+      "value": 7
+    }
+  ],
+  "power": [
+    {
+      "name": "~1500",
+      "value": 1450
+    },
+    {
+      "name": "1500~1600",
+      "value": 1550
+    },
+    {
+      "name": "1600~1700",
+      "value": 1650
+    },
+    {
+      "name": "1700~1800",
+      "value": 1750
+    },
+    {
+      "name": "1800~1900",
+      "value": 1850
+    },
+    {
+      "name": "1900~2000",
+      "value": 1950
+    },
+    {
+      "name": "2000~2100",
+      "value": 2050
+    },
+    {
+      "name": "2100~2200",
+      "value": 2150
+    },
+    {
+      "name": "2200~2300",
+      "value": 2250
+    },
+    {
+      "name": "2300~2400",
+      "value": 2350
+    },
+    {
+      "name": "2400~2500",
+      "value": 2450
+    },
+    {
+      "name": "2500~2600",
+      "value": 2550
+    },
+    {
+      "name": "2600~2700",
+      "value": 2650
+    },
+    {
+      "name": "2700~",
+      "value": 2750
+    }
+  ],
+  "mode": [
+    {
+      "key": "nawabari",
+      "name": "ナワバリ",
+      "value": 1
+    },
+    {
+      "key": "area",
+      "name": "エリア",
+      "value": 2
+    },
+    {
+      "key": "yagura",
+      "name": "ヤグラ",
+      "value": 3
+    },
+    {
+      "key": "hoko",
+      "name": "ホコ",
+      "value": 4
+    },
+    {
+      "key": "asari",
+      "name": "アサリ",
+      "value": 5
+    }
+  ],
+  "stage": [
+    {
+      "key": "ohyo",
+      "name": "オヒョウ海運",
+      "value": 1
+    },
+    {
+      "key": "kinmedai",
+      "name": "キンメダイ美術館",
+      "value": 2
+    },
+    {
+      "key": "kusaya",
+      "name": "クサヤ温泉",
+      "value": 3
+    },
+    {
+      "key": "gonzui",
+      "name": "ゴンズイ地区",
+      "value": 4
+    },
+    {
+      "key": "kombu",
+      "name": "コンブトラック",
+      "value": 5
+    },
+    {
+      "key": "zatou",
+      "name": "ザトウマーケット",
+      "value": 6
+    },
+    {
+      "key": "sumeshi",
+      "name": "スメーシーワールド",
+      "value": 7
+    },
+    {
+      "key": "takaashi",
+      "name": "タカアシ経済特区",
+      "value": 8
+    },
+    {
+      "key": "taraport",
+      "name": "タラポートショッピングパーク",
+      "value": 9
+    },
+    {
+      "key": "chozame",
+      "name": "チョウザメ造船",
+      "value": 10
+    },
+    {
+      "key": "namero",
+      "name": "ナメロウ金属",
+      "value": 11
+    },
+    {
+      "key": "nampla",
+      "name": "ナンプラー遺跡",
+      "value": 12
+    },
+    {
+      "key": "hirame",
+      "name": "ヒラメが丘団地",
+      "value": 13
+    },
+    {
+      "key": "masaba",
+      "name": "マサバ海峡大橋",
+      "value": 14
+    },
+    {
+      "key": "mategai",
+      "name": "マテガイ放水路",
+      "value": 15
+    },
+    {
+      "key": "mahimahi",
+      "name": "マヒマヒリゾート＆スパ",
+      "value": 16
+    },
+    {
+      "key": "manta",
+      "name": "マンタマリア号",
+      "value": 17
+    },
+    {
+      "key": "yagara",
+      "name": "ヤガラ市場",
+      "value": 18
+    },
+    {
+      "key": "yunohana",
+      "name": "ユノハナ大渓谷",
+      "value": 19
+    },
+    {
+      "key": "amabi",
+      "name": "海女美術大学",
+      "value": 20
+    }
+  ],
+  "weapon": [
+    {
+      "key": "52gal",
+      "name": ".52ガロン",
+      "main": 6,
+      "sub": 5,
+      "sp": 17,
+      "value": 1
+    },
+    {
+      "key": "96gal",
+      "name": ".96ガロン",
+      "main": 9,
+      "sub": 7,
+      "sp": 6,
+      "value": 2
+    },
+    {
+      "key": "96gal_deco",
+      "name": ".96ガロンデコ",
+      "main": 9,
+      "sub": 5,
+      "sp": 11,
+      "value": 3
+    },
+    {
+      "key": "bamboo14mk1",
+      "name": "14式竹筒銃・甲",
+      "main": 25,
+      "sub": 14,
+      "sp": 17,
+      "value": 4
+    },
+    {
+      "key": "liter4k_scope",
+      "name": "4Kスコープ",
+      "main": 24,
+      "sub": 9,
+      "sp": 15,
+      "value": 5
+    },
+    {
+      "key": "h3reelgun",
+      "name": "H3リールガン",
+      "main": 13,
+      "sub": 12,
+      "sp": 4,
+      "value": 6
+    },
+    {
+      "key": "h3reelgun_d",
+      "name": "H3リールガンD",
+      "main": 13,
+      "sub": 5,
+      "sp": 7,
+      "value": 7
+    },
+    {
+      "key": "l3reelgun",
+      "name": "L3リールガン",
+      "main": 12,
+      "sub": 1,
+      "sp": 5,
+      "value": 8
+    },
+    {
+      "key": "l3reelgun_d",
+      "name": "L3リールガンD",
+      "main": 12,
+      "sub": 3,
+      "sp": 3,
+      "value": 9
+    },
+    {
+      "key": "lact450",
+      "name": "LACT-450",
+      "main": 91,
+      "sub": 1,
+      "sp": 16,
+      "value": 10
+    },
+    {
+      "key": "nzap85",
+      "name": "N-ZAP85",
+      "main": 7,
+      "sub": 2,
+      "sp": 4,
+      "value": 11
+    },
+    {
+      "key": "nzap89",
+      "name": "N-ZAP89",
+      "main": 7,
+      "sub": 14,
+      "sp": 12,
+      "value": 12
+    },
+    {
+      "key": "rpen_5h",
+      "name": "R-PEN/5H",
+      "main": 27,
+      "sub": 7,
+      "sp": 4,
+      "value": 13
+    },
+    {
+      "key": "rapid_elite",
+      "name": "Rブラスターエリート",
+      "main": 75,
+      "sub": 11,
+      "sp": 6,
+      "value": 14
+    },
+    {
+      "key": "rapid_elite_deco",
+      "name": "Rブラスターエリートデコ",
+      "main": 75,
+      "sub": 13,
+      "sp": 17,
+      "value": 15
+    },
+    {
+      "key": "sblast92",
+      "name": "S-BLAST92",
+      "main": 76,
+      "sub": 7,
+      "sp": 8,
+      "value": 16
+    },
+    {
+      "key": "examiner",
+      "name": "イグザミナー",
+      "main": 45,
+      "sub": 1,
+      "sp": 4,
+      "value": 17
+    },
+    {
+      "key": "variableroller",
+      "name": "ヴァリアブルローラー",
+      "main": 18,
+      "sub": 9,
+      "sp": 16,
+      "value": 18
+    },
+    {
+      "key": "explosher",
+      "name": "エクスプロッシャー",
+      "main": 34,
+      "sub": 12,
+      "sp": 1,
+      "value": 19
+    },
+    {
+      "key": "furo",
+      "name": "オーバーフロッシャー",
+      "main": 33,
+      "sub": 7,
+      "sp": 1,
+      "value": 20
+    },
+    {
+      "key": "furo_deco",
+      "name": "オーバーフロッシャーデコ",
+      "main": 33,
+      "sub": 13,
+      "sp": 11,
+      "value": 21
+    },
+    {
+      "key": "carbon",
+      "name": "カーボンローラー",
+      "main": 15,
+      "sub": 14,
+      "sp": 9,
+      "value": 22
+    },
+    {
+      "key": "carbon_deco",
+      "name": "カーボンローラーデコ",
+      "main": 15,
+      "sub": 3,
+      "sp": 2,
+      "value": 23
+    },
+    {
+      "key": "campingshelter",
+      "name": "キャンピングシェルター",
+      "main": 61,
+      "sub": 4,
+      "sp": 6,
+      "value": 24
+    },
+    {
+      "key": "campingshelter_sorella",
+      "name": "キャンピングシェルターソレーラ",
+      "main": 61,
+      "sub": 9,
+      "sp": 2,
+      "value": 25
+    },
+    {
+      "key": "quadhopper_black",
+      "name": "クアッドホッパーブラック",
+      "main": 54,
+      "sub": 14,
+      "sp": 8,
+      "value": 26
+    },
+    {
+      "key": "quadhopper_white",
+      "name": "クアッドホッパーホワイト",
+      "main": 54,
+      "sub": 7,
+      "sp": 9,
+      "value": 27
+    },
+    {
+      "key": "kugelschreiber",
+      "name": "クーゲルシュライバー",
+      "main": 43,
+      "sub": 8,
+      "sp": 10,
+      "value": 28
+    },
+    {
+      "key": "kugelschreiber_hue",
+      "name": "クーゲルシュライバー・ヒュー",
+      "main": 43,
+      "sub": 9,
+      "sp": 6,
+      "value": 29
+    },
+    {
+      "key": "clashblaster",
+      "name": "クラッシュブラスター",
+      "main": 73,
+      "sub": 6,
+      "sp": 2,
+      "value": 30
+    },
+    {
+      "key": "clashblaster_neo",
+      "name": "クラッシュブラスターネオ",
+      "main": 73,
+      "sub": 1,
+      "sp": 12,
+      "value": 31
+    },
+    {
+      "key": "kelvin525",
+      "name": "ケルビン525",
+      "main": 52,
+      "sub": 5,
+      "sp": 14,
+      "value": 32
+    },
+    {
+      "key": "jetsweeper",
+      "name": "ジェットスイーパー",
+      "main": 10,
+      "sub": 13,
+      "sp": 6,
+      "value": 33
+    },
+    {
+      "key": "jetsweeper_custom",
+      "name": "ジェットスイーパーカスタム",
+      "main": 10,
+      "sub": 11,
+      "sp": 1,
+      "value": 34
+    },
+    {
+      "key": "jimuwiper",
+      "name": "ジムワイパー",
+      "main": 100,
+      "sub": 3,
+      "sp": 9,
+      "value": 35
+    },
+    {
+      "key": "sharp",
+      "name": "シャープマーカー",
+      "main": 3,
+      "sub": 3,
+      "sp": 5,
+      "value": 36
+    },
+    {
+      "key": "sharp_neo",
+      "name": "シャープマーカーネオ",
+      "main": 3,
+      "sub": 2,
+      "sp": 13,
+      "value": 37
+    },
+    {
+      "key": "squiclean_a",
+      "name": "スクイックリンα",
+      "main": 20,
+      "sub": 12,
+      "sp": 7,
+      "value": 38
+    },
+    {
+      "key": "screwslosher",
+      "name": "スクリュースロッシャー",
+      "main": 32,
+      "sub": 8,
+      "sp": 14,
+      "value": 39
+    },
+    {
+      "key": "screwslosher_neo",
+      "name": "スクリュースロッシャーネオ",
+      "main": 32,
+      "sub": 12,
+      "sp": 2,
+      "value": 40
+    },
+    {
+      "key": "spygadget",
+      "name": "スパイガジェット",
+      "main": 62,
+      "sub": 9,
+      "sp": 8,
+      "value": 41
+    },
+    {
+      "key": "sputtery",
+      "name": "スパッタリー",
+      "main": 50,
+      "sub": 4,
+      "sp": 4,
+      "value": 42
+    },
+    {
+      "key": "sputtery_hue",
+      "name": "スパッタリー・ヒュー",
+      "main": 50,
+      "sub": 10,
+      "sp": 8,
+      "value": 43
+    },
+    {
+      "key": "sshooter",
+      "name": "スプラシューター",
+      "main": 5,
+      "sub": 2,
+      "sp": 2,
+      "value": 44
+    },
+    {
+      "key": "sshooter_collabo",
+      "name": "スプラシューターコラボ",
+      "main": 5,
+      "sub": 6,
+      "sp": 13,
+      "value": 45
+    },
+    {
+      "key": "splatscope",
+      "name": "スプラスコープ",
+      "main": 22,
+      "sub": 6,
+      "sp": 6,
+      "value": 46
+    },
+    {
+      "key": "splatscope_collabo",
+      "name": "スプラスコープコラボ",
+      "main": 22,
+      "sub": 5,
+      "sp": 13,
+      "value": 47
+    },
+    {
+      "key": "splatspinner",
+      "name": "スプラスピナー",
+      "main": 40,
+      "sub": 3,
+      "sp": 3,
+      "value": 48
+    },
+    {
+      "key": "splatspinner_collabo",
+      "name": "スプラスピナーコラボ",
+      "main": 40,
+      "sub": 11,
+      "sp": 7,
+      "value": 49
+    },
+    {
+      "key": "splatcharger",
+      "name": "スプラチャージャー",
+      "main": 21,
+      "sub": 6,
+      "sp": 6,
+      "value": 50
+    },
+    {
+      "key": "splatcharger_collabo",
+      "name": "スプラチャージャーコラボ",
+      "main": 21,
+      "sub": 5,
+      "sp": 13,
+      "value": 51
+    },
+    {
+      "key": "maneuver",
+      "name": "スプラマニューバー",
+      "main": 51,
+      "sub": 2,
+      "sp": 5,
+      "value": 52
+    },
+    {
+      "key": "splatroller",
+      "name": "スプラローラー",
+      "main": 16,
+      "sub": 1,
+      "sp": 7,
+      "value": 53
+    },
+    {
+      "key": "splatroller_collabo",
+      "name": "スプラローラーコラボ",
+      "main": 16,
+      "sub": 4,
+      "sp": 11,
+      "value": 54
+    },
+    {
+      "key": "spaceshooter",
+      "name": "スペースシューター",
+      "main": 11,
+      "sub": 12,
+      "sp": 17,
+      "value": 55
+    },
+    {
+      "key": "spaceshooter_collabo",
+      "name": "スペースシューターコラボ",
+      "main": 11,
+      "sub": 9,
+      "sp": 10,
+      "value": 56
+    },
+    {
+      "key": "soytuber",
+      "name": "ソイチューバー",
+      "main": 26,
+      "sub": 10,
+      "sp": 16,
+      "value": 57
+    },
+    {
+      "key": "soytuber_custom",
+      "name": "ソイチューバーカスタム",
+      "main": 26,
+      "sub": 8,
+      "sp": 3,
+      "value": 58
+    },
+    {
+      "key": "dynamo",
+      "name": "ダイナモローラー",
+      "main": 17,
+      "sub": 7,
+      "sp": 4,
+      "value": 59
+    },
+    {
+      "key": "dynamo_tesla",
+      "name": "ダイナモローラーテスラ",
+      "main": 17,
+      "sub": 6,
+      "sp": 12,
+      "value": 60
+    },
+    {
+      "key": "dualsweeper",
+      "name": "デュアルスイーパー",
+      "main": 53,
+      "sub": 6,
+      "sp": 15,
+      "value": 61
+    },
+    {
+      "key": "dualsweeper_custom",
+      "name": "デュアルスイーパーカスタム",
+      "main": 53,
+      "sub": 4,
+      "sp": 12,
+      "value": 62
+    },
+    {
+      "key": "tristringer",
+      "name": "トライストリンガー",
+      "main": 90,
+      "sub": 11,
+      "sp": 17,
+      "value": 63
+    },
+    {
+      "key": "tristringer_collabo",
+      "name": "トライストリンガーコラボ",
+      "main": 90,
+      "sub": 7,
+      "sp": 12,
+      "value": 64
+    },
+    {
+      "key": "drivewiper",
+      "name": "ドライブワイパー",
+      "main": 101,
+      "sub": 10,
+      "sp": 3,
+      "value": 65
+    },
+    {
+      "key": "drivewiper_deco",
+      "name": "ドライブワイパーデコ",
+      "main": 101,
+      "sub": 4,
+      "sp": 16,
+      "value": 66
+    },
+    {
+      "key": "nova",
+      "name": "ノヴァブラスター",
+      "main": 70,
+      "sub": 6,
+      "sp": 9,
+      "value": 67
+    },
+    {
+      "key": "nova_neo",
+      "name": "ノヴァブラスターネオ",
+      "main": 70,
+      "sub": 8,
+      "sp": 3,
+      "value": 68
+    },
+    {
+      "key": "nautilus47",
+      "name": "ノーチラス47",
+      "main": 44,
+      "sub": 12,
+      "sp": 1,
+      "value": 69
+    },
+    {
+      "key": "hydra",
+      "name": "ハイドラント",
+      "main": 42,
+      "sub": 14,
+      "sp": 14,
+      "value": 70
+    },
+    {
+      "key": "bucketslosher",
+      "name": "バケットスロッシャー",
+      "main": 30,
+      "sub": 6,
+      "sp": 13,
+      "value": 71
+    },
+    {
+      "key": "bucketslosher_deco",
+      "name": "バケットスロッシャーデコ",
+      "main": 30,
+      "sub": 13,
+      "sp": 9,
+      "value": 72
+    },
+    {
+      "key": "pablo",
+      "name": "パブロ",
+      "main": 80,
+      "sub": 6,
+      "sp": 17,
+      "value": 73
+    },
+    {
+      "key": "pablo_hue",
+      "name": "パブロ・ヒュー",
+      "main": 80,
+      "sub": 9,
+      "sp": 3,
+      "value": 74
+    },
+    {
+      "key": "parashelter",
+      "name": "パラシェルター",
+      "main": 60,
+      "sub": 7,
+      "sp": 13,
+      "value": 75
+    },
+    {
+      "key": "parashelter_sorella",
+      "name": "パラシェルターソレーラ",
+      "main": 60,
+      "sub": 14,
+      "sp": 10,
+      "value": 76
+    },
+    {
+      "key": "barrelspinner",
+      "name": "バレルスピナー",
+      "main": 41,
+      "sub": 7,
+      "sp": 15,
+      "value": 77
+    },
+    {
+      "key": "barrelspinner_deco",
+      "name": "バレルスピナーデコ",
+      "main": 41,
+      "sub": 12,
+      "sp": 11,
+      "value": 78
+    },
+    {
+      "key": "heroshooter_replica",
+      "name": "ヒーローシューター レプリカ",
+      "main": 5,
+      "sub": 2,
+      "sp": 2,
+      "value": 79
+    },
+    {
+      "key": "hissen",
+      "name": "ヒッセン",
+      "main": 31,
+      "sub": 11,
+      "sp": 10,
+      "value": 80
+    },
+    {
+      "key": "hissen_hue",
+      "name": "ヒッセン・ヒュー",
+      "main": 31,
+      "sub": 8,
+      "sp": 4,
+      "value": 81
+    },
+    {
+      "key": "fincent",
+      "name": "フィンセント",
+      "main": 82,
+      "sub": 1,
+      "sp": 15,
+      "value": 82
+    },
+    {
+      "key": "prime",
+      "name": "プライムシューター",
+      "main": 8,
+      "sub": 13,
+      "sp": 5,
+      "value": 83
+    },
+    {
+      "key": "prime_collabo",
+      "name": "プライムシューターコラボ",
+      "main": 8,
+      "sub": 2,
+      "sp": 14,
+      "value": 84
+    },
+    {
+      "key": "promodeler_mg",
+      "name": "プロモデラーMG",
+      "main": 4,
+      "sub": 8,
+      "sp": 8,
+      "value": 85
+    },
+    {
+      "key": "promodeler_rg",
+      "name": "プロモデラーRG",
+      "main": 4,
+      "sub": 7,
+      "sp": 14,
+      "value": 86
+    },
+    {
+      "key": "bold",
+      "name": "ボールドマーカー",
+      "main": 1,
+      "sub": 1,
+      "sp": 3,
+      "value": 87
+    },
+    {
+      "key": "bold_neo",
+      "name": "ボールドマーカーネオ",
+      "main": 1,
+      "sub": 4,
+      "sp": 17,
+      "value": 88
+    },
+    {
+      "key": "hokusai",
+      "name": "ホクサイ",
+      "main": 81,
+      "sub": 2,
+      "sp": 9,
+      "value": 89
+    },
+    {
+      "key": "hokusai_hue",
+      "name": "ホクサイ・ヒュー",
+      "main": 81,
+      "sub": 4,
+      "sp": 1,
+      "value": 90
+    },
+    {
+      "key": "hotblaster",
+      "name": "ホットブラスター",
+      "main": 71,
+      "sub": 14,
+      "sp": 7,
+      "value": 91
+    },
+    {
+      "key": "bottlegeyser",
+      "name": "ボトルガイザー",
+      "main": 14,
+      "sub": 5,
+      "sp": 2,
+      "value": 92
+    },
+    {
+      "key": "moprin",
+      "name": "モップリン",
+      "main": 35,
+      "sub": 2,
+      "sp": 8,
+      "value": 93
+    },
+    {
+      "key": "momiji",
+      "name": "もみじシューター",
+      "main": 2,
+      "sub": 10,
+      "sp": 15,
+      "value": 94
+    },
+    {
+      "key": "rapid",
+      "name": "ラピッドブラスター",
+      "main": 74,
+      "sub": 9,
+      "sp": 13,
+      "value": 95
+    },
+    {
+      "key": "rapid_deco",
+      "name": "ラピッドブラスターデコ",
+      "main": 74,
+      "sub": 10,
+      "sp": 10,
+      "value": 96
+    },
+    {
+      "key": "liter4k",
+      "name": "リッター4K",
+      "main": 23,
+      "sub": 9,
+      "sp": 15,
+      "value": 97
+    },
+    {
+      "key": "longblaster",
+      "name": "ロングブラスター",
+      "main": 72,
+      "sub": 2,
+      "sp": 15,
+      "value": 98
+    },
+    {
+      "key": "wideroller",
+      "name": "ワイドローラー",
+      "main": 19,
+      "sub": 5,
+      "sp": 6,
+      "value": 99
+    },
+    {
+      "key": "wideroller_collabo",
+      "name": "ワイドローラーコラボ",
+      "main": 19,
+      "sub": 13,
+      "sp": 1,
+      "value": 100
+    },
+    {
+      "key": "wakaba",
+      "name": "わかばシューター",
+      "main": 2,
+      "sub": 6,
+      "sp": 7,
+      "value": 101
+    }
+  ]
+}

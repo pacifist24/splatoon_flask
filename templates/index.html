@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>対戦設定</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <h1>対戦設定</h1>
+
+        <form action="/submit" method="post">
+            <div class="ms-3 d-flex flex-column">
+                <div class="mt-2 d-flex">
+                    <label for="lobby" class="me-2">対戦モード</label>
+                    <select name="lobby" id="lobby">
+                        {% for lobby_master in master["lobby"] %}
+                            {% if lobby_master.name != "イベント" %}
+                                <option value="{{ lobby_master.value }}" {% if lobby_master.value == lobby %}selected{% endif %}>{{ lobby_master.name }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+
+                    <div class="ms-3" id="power">
+                        <label for="power" class="me-1">XP</label>
+                        <select name="power">
+                            {% for power_master in master["power"] %}
+                                <option value="{{ power_master.value }}" {% if power_master.value == power %}selected{% endif %}>{{ power_master.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <label for="mode" class="me-2">ルール</label>
+                    <select name="mode" id="mode">
+                        {% for mode_master in master["mode"] %}
+                            <option value="{{ mode_master.value }}" {% if mode_master.value == mode %}selected{% endif %}>{{ mode_master.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mt-2">
+                    <label for="stage" class="me-2">ステージ</label>
+                    <select name="stage">
+                        {% for stage_master in master["stage"] %}
+                            <option value="{{ stage_master.value }}"{% if stage_master.value == stage %}selected{% endif %}>{{ stage_master.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mt-2">
+                    <label for="a1_weapon" class="me-2">自チーム1</label>
+                    <select name="a1_weapon">
+                        {% for weapon in master["weapon"] %}
+                            <option value="{{ weapon.value }}" {% if weapon.value == a1_weapon %}selected{% endif %}>{{ weapon.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mt-2">
+                    <label for="a2_weapon" class="me-2">自チーム2</label>
+                    <select name="a2_weapon">
+                        {% for weapon in master["weapon"] %}
+                            <option value="{{ weapon.value }}"  {% if weapon.value == a2_weapon %}selected{% endif %}>{{ weapon.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+        
+                <div class="mt-2">
+                    <label for="a3_weapon" class="me-2">自チーム3</label>
+                    <select name="a3_weapon">
+                        {% for weapon in master["weapon"] %}
+                            <option value="{{ weapon.value }}"  {% if weapon.value == a3_weapon %}selected{% endif %}>{{ weapon.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+        
+                <div class="mt-2">
+                    <label for="a4_weapon" class="me-2">自チーム4</label>
+                    <select name="a4_weapon">
+                        {% for weapon in master["weapon"] %}
+                            <option value="{{ weapon.value }}"  {% if weapon.value == a4_weapon %}selected{% endif %}>{{ weapon.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+        
+                <div class="mt-2">
+                    <label for="b1_weapon" class="me-2">敵チーム1</label>
+                    <select name="b1_weapon">
+                        {% for weapon in master["weapon"] %}
+                            <option value="{{ weapon.value }}"  {% if weapon.value == b1_weapon %}selected{% endif %}>{{ weapon.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+        
+                <div class="mt-2">
+                    <label for="b2_weapon" class="me-2">敵チーム2</label>
+                    <select name="b2_weapon">
+                        {% for weapon in master["weapon"] %}
+                            <option value="{{ weapon.value }}" {% if weapon.value == b2_weapon %}selected{% endif %}>{{ weapon.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+        
+                <div class="mt-2">
+                    <label for="b3_weapon" class="me-2">敵チーム3</label>
+                    <select name="b3_weapon">
+                        {% for weapon in master["weapon"] %}
+                            <option value="{{ weapon.value }}" {% if weapon.value == b3_weapon %}selected{% endif %}>{{ weapon.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+        
+                <div class="mt-2">
+                    <label for="b4_weapon" class="me-2">敵チーム4</label>
+                    <select name="b4_weapon">
+                        {% for weapon in master["weapon"] %}
+                            <option value="{{ weapon.value }}" {% if weapon.value == b4_weapon %}selected{% endif %}>{{ weapon.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+        
+                <div class="mt-2">
+                    <input type="submit" value="勝率予測出力">
+                </div>
+            </div>
+            <div class="output">
+                {{ output }}
+            </div>
+    </div>
+
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        const power = document.querySelector("#power")
+        const lobby = document.querySelector("#lobby")
+        const mode = document.querySelector("#mode")
+        if(lobby.value == 4) {// Xマッチの場合にはXパワーを表示する
+            power.classList.remove("collapse")
+        } else {
+            power.classList.add("collapse")
+        }
+        
+        if(lobby.value == 1 ||lobby.value == 5 || lobby.value == 6){// レギュラーかフェスの場合はルールをナワバリにする
+            mode.value = 1
+            // 選択されていないoption要素をdisabledにする
+            mode.querySelectorAll("option:not(:checked)").forEach(option => {
+                option.disabled = true;
+            });
+        } else {
+            mode.querySelectorAll("option").forEach(option => {
+                option.disabled = false;
+            });
+        }
+
+        lobby.addEventListener("change", (e) => {
+
+            if(e.target.value == 4) {// Xマッチの場合にはXパワーを表示する
+                power.classList.remove("collapse")
+            } else {
+                power.classList.add("collapse")
+            }
+
+            if(lobby.value == 1 ||lobby.value == 5 || lobby.value == 6){// レギュラーかフェスの場合はルールをナワバリにする
+                mode.value = 1 //ナワバリを選択
+                // 選択されていないoption要素をdisabledにする
+                mode.querySelectorAll("option:not(:checked)").forEach(option => {
+                    option.disabled = true;
+                });
+            } else {
+                mode.value = 2 //エリアを選択
+                mode.querySelectorAll("option").forEach(option => { //いったんすべてのdisabledを解除
+                    option.disabled = false;
+                });
+                mode.querySelectorAll('option[value="1"]').forEach(option => { //ナワバリをdisabledにする
+                    option.disabled = true;
+                });
+            }
+
+        })
+      </script>
+</body>
+</html>
