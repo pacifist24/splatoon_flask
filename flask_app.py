@@ -16,7 +16,8 @@ with open("win_ratio_model_lgb.pkl", mode="rb") as f:
 
 weapon_hash = {}
 for weapon in master["weapon"]:
-  weapon_hash[weapon["value"]] = weapon
+    weapon_hash[weapon["value"]] = weapon
+
 
 @app.route("/")
 def index():
@@ -38,13 +39,14 @@ def index():
         b4_weapon=1,
     )
 
+
 @app.route("/submit", methods=["POST"])
 def submit():
     # フォームの値を取得
     lobby = int(request.form.get("lobby"))
     power = int(request.form.get("power"))
-    if lobby is not 4: #XマッチではないならNanを入れる
-      power = np.nan
+    if lobby is not 4:  # XマッチではないならNanを入れる
+        power = np.nan
     mode = int(request.form.get("mode"))
     stage = int(request.form.get("stage"))
     a1_weapon = int(request.form.get("a1_weapon"))
@@ -88,38 +90,71 @@ def submit():
     b4_sp = int(weapon_hash[b4_weapon]["sp"])
 
     # 勝率予想に使うデータ
-    inputData = np.array([[lobby,mode,stage,power,
-      a1_weapon,a1_main,a1_sub,a1_sp,
-      a2_weapon,a2_main,a2_sub,a2_sp,
-      a3_weapon,a3_main,a3_sub,a3_sp,
-      a4_weapon,a4_main,a4_sub,a4_sp,
-      b1_weapon,b1_main,b1_sub,b1_sp,
-      b2_weapon,b2_main,b2_sub,b2_sp,
-      b3_weapon,b3_main,b3_sub,b3_sp,
-      b4_weapon,b4_main,b4_sub,b4_sp]])
-    
+    inputData = np.array(
+        [
+            [
+                lobby,
+                mode,
+                stage,
+                power,
+                a1_weapon,
+                a1_main,
+                a1_sub,
+                a1_sp,
+                a2_weapon,
+                a2_main,
+                a2_sub,
+                a2_sp,
+                a3_weapon,
+                a3_main,
+                a3_sub,
+                a3_sp,
+                a4_weapon,
+                a4_main,
+                a4_sub,
+                a4_sp,
+                b1_weapon,
+                b1_main,
+                b1_sub,
+                b1_sp,
+                b2_weapon,
+                b2_main,
+                b2_sub,
+                b2_sp,
+                b3_weapon,
+                b3_main,
+                b3_sub,
+                b3_sp,
+                b4_weapon,
+                b4_main,
+                b4_sub,
+                b4_sp,
+            ]
+        ]
+    )
+
     print(inputData)
-    
+
     # 学習済みのモデルを使用して、予測を行う
     prob = 1 - model.predict(inputData)[0]
 
     # プルダウンのvalueの値をつなげた文字列を生成
     output = f"勝率{prob*100}%"
 
-    return render_template("index.html", 
-      master=master,
-      lobby=lobby,
-      power=power,
-      mode=mode, 
-      stage=stage,
-      a1_weapon=a1_weapon,
-      a2_weapon=a2_weapon,
-      a3_weapon=a3_weapon, 
-      a4_weapon=a4_weapon,
-      b1_weapon=b1_weapon,
-      b2_weapon=b2_weapon,
-      b3_weapon=b3_weapon, 
-      b4_weapon=b4_weapon,
-      output=output
+    return render_template(
+        "index.html",
+        master=master,
+        lobby=lobby,
+        power=power,
+        mode=mode,
+        stage=stage,
+        a1_weapon=a1_weapon,
+        a2_weapon=a2_weapon,
+        a3_weapon=a3_weapon,
+        a4_weapon=a4_weapon,
+        b1_weapon=b1_weapon,
+        b2_weapon=b2_weapon,
+        b3_weapon=b3_weapon,
+        b4_weapon=b4_weapon,
+        output=output,
     )
-    
